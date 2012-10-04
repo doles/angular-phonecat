@@ -3056,7 +3056,7 @@ function Browser(window, document, $log, $sniffer) {
   function fireUrlChange() {
     if (lastBrowserUrl == self.url()) return;
 
-    lastBrowserUrl = self.url();
+    //lastBrowserUrl = self.url();
     forEach(urlChangeListeners, function(listener) {
       listener(self.url());
     });
